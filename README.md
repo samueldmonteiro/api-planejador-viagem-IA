@@ -1,15 +1,27 @@
 # 🧳 Travel Guia API
 
-A **Travel Guia API** é uma aplicação desenvolvida em PHP usando o framework Laravel. Ela ajuda usuários a planejarem suas viagens de forma prática e segura, oferecendo as seguintes funcionalidades:
+O **Travel Guia API** é uma aplicação desenvolvida em PHP usando o framework Laravel e integração com IA. Ela ajuda usuários a planejarem suas viagens de forma prática e segura, oferecendo as seguintes funcionalidades:
 
 ## 🚀 Funcionalidades
 
-- **Itinerário Personalizado**: Crie um plano diário para aproveitar ao máximo a viagem.
+- **Itinerário Personalizado**: Crie um plano para cada dia que irá passar, para aproveitar ao máximo a viagem.
 - **Estimativa de Gastos**: Obtenha uma média de custos com base no destino e duração da viagem.
-- **Segurança**: Receba alertas sobre violência, áreas perigosas e dicas para viajar de forma mais segura.
-- **Integração com Google Gemini**: Dados detalhados e atualizados sobre locais turísticos e segurança.
+- **Segurança**: tenha informção sobre violência, áreas perigosas e dicas para viajar de forma mais segura.
+- **Integração com Google Gemini**: utiliza a API do Google Gemini para obter as informações atualizadas.
 
 ---
+
+## 📋 Rotas da API
+
+Abaixo estão listadas as principais rotas da API
+
+### 🔹 **Autenticação**
+| Método | Rota             | Descrição                      | Parâmetros          |
+|--------|------------------|--------------------------------|---------------------|
+| POST   | `api/v1/travelPlan/allPlan`     | Retorna o plano de viagem completo.       | `travel_location`, `arrival_date`  `departure_date`|
+
+---
+
 
 ## 📚 Requisitos
 
@@ -19,20 +31,8 @@ A **Travel Guia API** é uma aplicação desenvolvida em PHP usando o framework 
 
 ---
 
-## 📋 Rotas da API
-
-Abaixo estão listadas as principais rotas da API, junto com exemplos de uso.
-
-### 🔹 **Autenticação**
-| Método | Rota             | Descrição                      | Parâmetros          |
-|--------|------------------|--------------------------------|---------------------|
-| POST   | `api/v1/travelPlan/allPlan`     | Retorna o plano de viagem completo.       | `travel_location`, `arrival_date`  `departure_date`|
-
----
 
 ## 🚀 Guia de Instalação
-
-Siga os passos abaixo para configurar e executar o projeto localmente.
 
 ### 1. Clone o Repositório
 
