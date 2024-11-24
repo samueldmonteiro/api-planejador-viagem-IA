@@ -11,7 +11,6 @@ class TravelPlanController extends Controller
 {
     public function __construct(private TravelPlanService $travelPlanService) {}
 
-
     public function allPlan(TravelAllPlanRequest $request): JsonResponse
     {
         $response = $this->travelPlanService->generateAllTravelPlan(
