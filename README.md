@@ -15,7 +15,6 @@ O **Travel Guia API** é uma aplicação desenvolvida em PHP usando o framework 
 
 Abaixo estão listadas as principais rotas da API
 
-### 🔹 **Autenticação**
 | Método | Rota             | Descrição                      | Parâmetros          |
 |--------|------------------|--------------------------------|---------------------|
 | POST   | `api/v1/travelPlan/allPlan`     | Retorna o plano de viagem completo.       | `travel_location`, `arrival_date`  `departure_date`|
