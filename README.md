@@ -33,7 +33,21 @@ Abaixo estão listadas as principais rotas da API
 
 ---
 
-
-                                                                       
-
+### Clone
+```bash
+git clone https://github.com/samueldmonteiro/api-planejador-viagem-IA
+cd api-planejador-viagem-IA
+```
+### Instalar Dependências
+```bash
+composer install
+```
+### Criar .env.local
+```bash
+cp .env .env.local
+```
+### Adicionar chave de API do Gemini
+```bash
+API_GEMINI_KEY=sua_chave  
+```
 
