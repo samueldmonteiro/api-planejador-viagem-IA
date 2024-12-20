@@ -1,6 +1,6 @@
-# 🧳 Travel Guia API
+# 🧳 Planejador de Viagem API
 
-O **Travel Guia API** é uma aplicação desenvolvida em PHP usando o framework Laravel e integração com IA. Ela ajuda usuários a planejarem suas viagens de forma prática e segura, oferecendo as seguintes funcionalidades:
+Aplicação desenvolvida em PHP utilizando o framework Symfony e integração com IA. Ela ajuda usuários a planejarem suas viagens de forma prática e segura, oferecendo as seguintes funcionalidades:
 
 ## 🚀 Funcionalidades
 
