@@ -25,10 +25,7 @@ class TravelController extends AbstractController
 
         if (empty($data->travelLocation) || empty($data->arrivalDate) || empty($data->departureDate)) {
             return $this->json(
-                [
-                    'error' => 'Preencha todos os campos corretamente',
-                    'campos obrigatórios' => ['travelLocation', 'arrivalDate', 'departureDate']
-                ],
+                $this->messageRequiredFields(['travelLocation', 'arrivalDate', 'departureDate']),
                 400
             );
         }
@@ -48,10 +45,7 @@ class TravelController extends AbstractController
 
         if (empty($data->travelLocation)) {
             return $this->json(
-                [
-                    'error' => 'Preencha todos os campos corretamente',
-                    'campos obrigatórios' => ['travelLocation']
-                ],
+                $this->messageRequiredFields(['travelLocation']),
                 400
             );
         }
@@ -67,10 +61,7 @@ class TravelController extends AbstractController
 
         if (empty($data->travelLocation) || empty($data->arrivalDate) || empty($data->departureDate)) {
             return $this->json(
-                [
-                    'error' => 'Preencha todos os campos corretamente',
-                    'campos obrigatórios' => ['travelLocation', 'arrivalDate', 'departureDate']
-                ],
+                $this->messageRequiredFields(['travelLocation', 'arrivalDate', 'departureDate']),
                 400
             );
         }
@@ -90,10 +81,7 @@ class TravelController extends AbstractController
 
         if (empty($data->travelLocation)) {
             return $this->json(
-                [
-                    'error' => 'Preencha todos os campos corretamente',
-                    'campos obrigatórios' => ['travelLocation']
-                ],
+                $this->messageRequiredFields(['travelLocation']),
                 400
             );
         }
@@ -102,6 +90,12 @@ class TravelController extends AbstractController
 
         return $this->json($result);
     }
-}
 
-//112
+    private function messageRequiredFields(array $fields): array
+    {
+        return [
+            'error' => 'Preencha todos os campos corretamente',
+            'campos obrigatórios' => $fields
+        ];
+    }
+}

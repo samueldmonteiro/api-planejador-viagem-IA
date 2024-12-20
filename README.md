@@ -17,7 +17,10 @@ Abaixo estão listadas as principais rotas da API
 
 | Método | Rota             | Descrição                      | Parâmetros          |
 |--------|------------------|--------------------------------|---------------------|
-| POST   | `api/v1/travel/allPlan`     | Retorna o plano de viagem completo.       | `travel_location`, `arrival_date`  `departure_date`|
+| POST   | `api/v1/travel/all_plan`     | Retorna o plano de viagem completo.       | `travel_location`, `arrival_date`  `departure_date`|
+| POST   | `api/v1/travel/itinerary`     | Retorna o itinerário da viagem.       | `travel_location`, `arrival_date`  `departure_date`|
+| POST   | `api/v1/travel/climate_information`     | Retorna informações clima do local.       | `travel_location`|
+| POST   | `api/v1/travel/safety_information`     | Retorna informações sobre violência do local.       | `travel_location`|
 
 ---
 
@@ -31,26 +34,6 @@ Abaixo estão listadas as principais rotas da API
 ---
 
 
-## 🚀 Guia de Instalação
-
-### 1. Clone o Repositório
-
-```bash
-git clone https://github.com/seu-usuario/api-planejador-viagem-IA.git
-cd api-planejador-viagem-IA
-```
-
-### 2. Adicione sua chave gerada no arquivo .env
-
-```bash
-API_GEMINI_KEY=""
-```
-
-### 3. Instalar dependências
-
-```bash
-composer install
-```
                                                                        
 
 
