@@ -1,0 +1,19 @@
+all_plan:
+    path: /all_plan
+    controller: App\Controller\Api\V1\TravelController::allPlan
+    methods: [POST]
+
+itinerary:
+    path: /itinerary
+    controller: App\Controller\Api\V1\TravelController::itinerary
+    methods: [POST]
+
+climate_information:
+    path: /climate_information
+    controller: App\Controller\Api\V1\TravelController::climateInformation
+    methods: [POST]
+
+safety_information:
+    path: /safety_information
+    controller: App\Controller\Api\V1\TravelController::safetyInformation
+    methods: [POST]

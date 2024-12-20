@@ -7,14 +7,19 @@
         "php": ">=8.2",
         "ext-ctype": "*",
         "ext-iconv": "*",
+        "gemini-api-php/client": "^1.6",
+        "nyholm/psr7": "^1.8",
+        "paragonie/sodium_compat": "^2.1",
         "symfony/console": "7.2.*",
         "symfony/dotenv": "7.2.*",
         "symfony/flex": "^2",
         "symfony/framework-bundle": "7.2.*",
+        "symfony/http-client": "^7.2",
         "symfony/runtime": "7.2.*",
         "symfony/yaml": "7.2.*"
     },
     "require-dev": {
+        "symfony/maker-bundle": "^1.61"
     },
     "config": {
         "allow-plugins": {
