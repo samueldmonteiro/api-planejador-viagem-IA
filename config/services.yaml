@@ -6,6 +6,7 @@
 parameters:
 
 services:
+    App\Domain\Service\AiServiceInterface: '@App\Infra\Service\GeminiApiService'
     # default configuration for services in *this* file
     _defaults:
         autowire: true      # Automatically injects dependencies in your services.
