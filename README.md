@@ -42,9 +42,10 @@ cd api-planejador-viagem-IA
 ```bash
 composer install
 ```
-### Criar .env.local
+### Arquivos .env.local e .env.test
 ```bash
 cp .env .env.local
+cp .env.test .env.test.local
 ```
 ### Adicionar chave de API do Gemini
 ```bash
