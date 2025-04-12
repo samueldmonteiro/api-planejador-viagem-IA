@@ -2,12 +2,9 @@
 
 namespace App\Application\Controller\Api\V1;
 
-use App\Domain\UseCase\Travel\FetchClimateData;
-use App\Domain\UseCase\Travel\FetchSafetyInformation;
-use App\Domain\UseCase\Travel\GenerateItinerary;
+use App\Domain\UseCase\Travel\{FetchClimateData, FetchSafetyInformation, GenerateItinerary};
 use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
-use Symfony\Component\HttpFoundation\JsonResponse;
-use Symfony\Component\HttpFoundation\Request;
+use Symfony\Component\HttpFoundation\{JsonResponse, Request};
 
 class TravelController extends AbstractController
 {
@@ -107,4 +104,3 @@ class TravelController extends AbstractController
         ];
     }
 }
-#104
