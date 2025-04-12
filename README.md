@@ -19,7 +19,7 @@ Abaixo estão listadas as principais rotas da API
 |--------|------------------|--------------------------------|---------------------|
 | POST   | `api/v1/plan/all`     | Retorna o plano de viagem completo.       | `travel_location`, `arrival_date`  `departure_date`|
 | POST   | `api/v1/plan/itinerary`     | Retorna o itinerário da viagem.       | `travel_location`, `arrival_date`  `departure_date`|
-| POST   | `api/v1/information/climate`     | Retorna informações clima do local.       | `travel_location`|
+| POST   | `api/v1/information/climate`     | Retorna informações clima do local.       | `travel_location` `arrivalDate`|
 | POST   | `api/v1/information/safety`     | Retorna informações sobre violência do local.       | `travel_location`|
 
 ---
